@@ -54,7 +54,7 @@ da_vacinacao_municipio <- da_vacinacao %>%
 
 #dplyr::glimpse(da_vacinacao_municipio)
 
-usethis::use_data(da_vacinacao_municipio, overwrite = T)
+#usethis::use_data(da_vacinacao_municipio, overwrite = T)
 #devtools::document()
 
 

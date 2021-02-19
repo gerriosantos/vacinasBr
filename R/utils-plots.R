@@ -12,16 +12,16 @@ barras <- function(da, var){
 }
 
 # Versao para usar sem aspas -- menos usual em packages
-# barras_ <- function(da, var){
-#   da %>%
-#     dplyr::group_by(data) %>%
-#     dplyr::summarise(total = sum({{var}})) %>%
-#     ggplot2::ggplot()+
-#     ggplot2::aes(data, total)+
-#     ggplot2::geom_col()+
-#     ggplot2::theme_minimal(12)
-#
-# }
+barras_ <- function(da, var){
+  da %>%
+    dplyr::group_by(data) %>%
+    dplyr::summarise(total = sum({{var}})) %>%
+    ggplot2::ggplot()+
+    ggplot2::aes(data, total)+
+    ggplot2::geom_col()+
+    ggplot2::theme_minimal(12)
+
+}
 
 
 
